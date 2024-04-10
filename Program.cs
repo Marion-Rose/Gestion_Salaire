@@ -37,23 +37,23 @@ namespace Gestion_Salaire
             VariablesGlobales.listeGrilles.Add(grilleDeveloppeur);
             VariablesGlobales.listeGrilles.Add(grilleDéveloppeurChef);
 
-            Entreprise okantis = new Entreprise(1, "Okantis", "2 rue Jean Monnet 87170 ISLE");
-            VariablesGlobales.listeEntreprises.Add(okantis);
+            Entreprise devEnFolie = new Entreprise(1, "Dev en Folie", "2 rue du C# 87000 LIMOGES");
+            VariablesGlobales.listeEntreprises.Add(devEnFolie);
 
-            Administrateur admin1 = new Administrateur(1, "Dum", "Laurent", "admin", "admin");
+            Administrateur admin1 = new Administrateur(1, "Maitre", "Yoda", "admin", "admin");
             VariablesGlobales.listeAdministrateurs.Add(admin1); 
 
-            Salarie vMaza = new Salarie(1, "Maza", "Valentin", 5, okantis, developpeurChef, 0);
-            Salarie qRod = new Salarie(2, "Rod", "Quentin", 3, okantis, developpeur,0);
-            Salarie eAl = new Salarie(3, "Al", "Emeline", 2, okantis, developpeur, 0);
-            Salarie aMard = new Salarie(4, "Mard", "Antoine", 1, okantis, developpeur, 0);
-            VariablesGlobales.listeSalaries.Add(vMaza);
-            VariablesGlobales.listeSalaries.Add(qRod);
-            VariablesGlobales.listeSalaries.Add(eAl);
-            VariablesGlobales.listeSalaries.Add(aMard);
+            Salarie aSky = new Salarie(1, "Skywalker", "Anakin", 5, devEnFolie, developpeurChef, 0);
+            Salarie lOrg = new Salarie(2, "Organa", "Leia", 3, devEnFolie, developpeur,0);
+            Salarie pAmi = new Salarie(3, "Amidala", "Padmé", 2, devEnFolie, developpeur, 0);
+            Salarie oKen = new Salarie(4, "Kenobi", "Obi-Wan", 1, devEnFolie, developpeur, 0);
+            VariablesGlobales.listeSalaries.Add(aSky);
+            VariablesGlobales.listeSalaries.Add(lOrg);
+            VariablesGlobales.listeSalaries.Add(pAmi);
+            VariablesGlobales.listeSalaries.Add(oKen);
 
-            Utilisateur vMazaU = new Utilisateur(vMaza, "m", "m");
-            VariablesGlobales.listeUtilisateurs.Add(vMazaU);
+            Utilisateur aSkyU = new Utilisateur(aSky, "user", "user");
+            VariablesGlobales.listeUtilisateurs.Add(aSkyU);
         }
     }
 }
